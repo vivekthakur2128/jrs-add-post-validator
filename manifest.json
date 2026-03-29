@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "JRS Blog Page Validator",
+  "version": "1.0",
+  "description": "Validate post before save",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://oxmaint.com/*", "https://ifactoryapp.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
